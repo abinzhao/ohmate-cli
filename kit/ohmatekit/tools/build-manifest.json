@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "1.0",
+  "generator": "scripts/generate-kit-tools.mjs",
+  "sources": [
+    {
+      "path": "packages/cli/src/agent/context-files.ts",
+      "sha256": "e091d07e0d08a7c0f05ef11a6daeb0a4f1a84ca6a1814c63c10dc7209c82eaa9"
+    },
+    {
+      "path": "packages/cli/src/agent/local-state.ts",
+      "sha256": "ef5e064a2a2963875317a30fa1b252e95f299d7f4408a4b4969cd10b7e6c0c3a"
+    },
+    {
+      "path": "packages/cli/src/agent/service-spec.ts",
+      "sha256": "01e03bab8c31244648e704ed04d72e440a318b21e6163f0caae5ef8b574df962"
+    },
+    {
+      "path": "packages/cli/src/config/project.ts",
+      "sha256": "ded6520760446569345a86d588a3a56dbffbd55074816195ad85a3e813f502d3"
+    },
+    {
+      "path": "packages/cli/src/dependency/dependency-service.ts",
+      "sha256": "0aba0c0de06a595ab77ea22ef7f2ea3ca3311774863d555ec0aba081f9e2449e"
+    },
+    {
+      "path": "packages/cli/src/dependency/graph-audit.ts",
+      "sha256": "0feb59b7869a7cd202ca68898ec1221fe1862fd49e7ec9f8cfa080e23f3645b8"
+    },
+    {
+      "path": "packages/cli/src/dependency/index.ts",
+      "sha256": "2917c6c6995211d6d4fea48ce201f5d25e9fc90de7a746382000a37b9eedfe0a"
+    },
+    {
+      "path": "packages/cli/src/dependency/native-and-imports.ts",
+      "sha256": "5118c5744a4ea2d28163c82d2fcf8ce44fb59e3becb1ef0fdbab74cbeaa6aa75"
+    },
+    {
+      "path": "packages/cli/src/dependency/native-archive.ts",
+      "sha256": "5ca191fd5c5a05ed9e09237dbaf29535e26301d8393ba507021e58f1ed6d64dd"
+    },
+    {
+      "path": "packages/cli/src/dependency/npm-lock.ts",
+      "sha256": "aaa1747a780cae22ebabe654abbe0c0111361140487a5fe1332909cf2aa2069c"
+    },
+    {
+      "path": "packages/cli/src/dependency/ohpm-lock.ts",
+      "sha256": "77a66becd9de71752d237c1a49c5ca9867ef0ca05bbcc1a3159e7364bb905abc"
+    },
+    {
+      "path": "packages/cli/src/dependency/package-graph.ts",
+      "sha256": "4ae2f32a871ed16491ef1f39fca2dc6ef26b3c3589ec05b49c544dce722c817d"
+    },
+    {
+      "path": "packages/cli/src/dependency/project-inputs.ts",
+      "sha256": "619b26ee6a89af74b9339464435c04683beaabdd0646caadd6e9abf16656f50c"
+    },
+    {
+      "path": "packages/cli/src/dependency/sbom.ts",
+      "sha256": "9f60737234669314d46b965b4474fa60502a992a5de09d5c300865b644442417"
+    },
+    {
+      "path": "packages/cli/src/dependency/types.ts",
+      "sha256": "d04adfdb3f685e695ea420caaee0ed6d0a8e15f3c6a4553cbb0cca30cdbc09be"
+    },
+    {
+      "path": "packages/cli/src/integrate/hvigor-plugin.ts",
+      "sha256": "512f3d46065de11325815da57d932f9956481d764a86c8f8b7eb6d96ed728e38"
+    },
+    {
+      "path": "packages/cli/src/integrate/kit-doctor.ts",
+      "sha256": "6f649e1ccc325a598edacadaf495113f92cec1f4dd9874a460b2d9bce3407025"
+    },
+    {
+      "path": "packages/cli/src/integrate/kit-tools.ts",
+      "sha256": "3bd6472737fc7938027c873ec8b1c897d4c8bd9a9e358e1aa54571dcf54e9a65"
+    },
+    {
+      "path": "packages/cli/src/integrate/runtime-integration.ts",
+      "sha256": "c75a10258e9ff498fd1a1dca7c329c2660651acfffe29fb7df96793fbbdc4f3c"
+    },
+    {
+      "path": "packages/cli/src/integrate/runtime-profile.ts",
+      "sha256": "e776ac4472f82c1edcf96ec5225dfea15da6beba7b589959cca5baada9f73d44"
+    },
+    {
+      "path": "packages/cli/src/integrate/runtime-sources.ts",
+      "sha256": "21386a4006027323497b9bbf60d7335c5dd952c7e1aec4d800482eae40f43d8e"
+    },
+    {
+      "path": "packages/cli/src/project-config/json5-spans.ts",
+      "sha256": "b920b45831f668c2f418a8dea2ed8cf597536a0e811616946f8f7fa415a3e16f"
+    },
+    {
+      "path": "packages/cli/src/project-model/index.ts",
+      "sha256": "da78e5fe23ef803fb4d04cafb549d4b513782fe7bcf205b3bb16abe4d646ca05"
+    },
+    {
+      "path": "packages/cli/src/project-model/project-inspector.ts",
+      "sha256": "a9b75db1cb0e618fa6bf4556f142672423f65ea9f16554b594154fc593178f68"
+    },
+    {
+      "path": "packages/cli/src/project-model/project-reader.ts",
+      "sha256": "6b7d94a1a42d828cea47698bc292d4cdb21fb5b709eecfb62f7d434dd6a6454e"
+    },
+    {
+      "path": "packages/cli/src/quality/evidence.ts",
+      "sha256": "f265efefaa51991677bc8ef58d4c65208c511f3ea947ba08a6af2959913883dd"
+    },
+    {
+      "path": "packages/cli/src/quality/source-tokens.ts",
+      "sha256": "c4f5b42449566ad0b58ebccd1a88d04d878a523f3b61c0998c5da17dc5ef24de"
+    },
+    {
+      "path": "packages/cli/src/release/elf.ts",
+      "sha256": "8b9beac7964d081cb5cbd5e19a8ba9b33bc13ee1958c7deaa02c8523cd4d71c7"
+    },
+    {
+      "path": "packages/cli/src/release/package-reader.ts",
+      "sha256": "3aa6ce8441da21355bb44f625fdc54512a5a45e3eec161d34cb3f09357052629"
+    },
+    {
+      "path": "packages/cli/src/release/release-gates.ts",
+      "sha256": "3e8232cfe4e332bf5fc80205f9b8732e14e993df92ef6c435d3248e05b05fea4"
+    },
+    {
+      "path": "packages/cli/src/release/release-inputs.ts",
+      "sha256": "56823985fdba68b1a480bca588f9def7c9eb2a41d68006394ab31ea2eff2a23c"
+    },
+    {
+      "path": "packages/cli/src/release/render-report.ts",
+      "sha256": "4452ba7d7e614469fca9640d62712d9bf5be5a79e5406e8a2160d79c9b23d81b"
+    },
+    {
+      "path": "packages/cli/src/release/source-gates.ts",
+      "sha256": "84b9b53b188bb21d4bdd89484b691974f59ba5228f784862d414a6cc4a2443f7"
+    },
+    {
+      "path": "packages/cli/src/release/types.ts",
+      "sha256": "9ed9200d661702ad12391f2a042c6e0e603c8621521697a549d8371d66118f0f"
+    },
+    {
+      "path": "packages/cli/src/runtime/context.ts",
+      "sha256": "aa53c3e1d30d5c765442a330093cd9e261659ccb4280b430a5924f54f9635e00"
+    },
+    {
+      "path": "packages/cli/src/runtime/execution-lock.ts",
+      "sha256": "39d87a68b5375db538c240f8a908504f357685abec852feb3f55fe006c4ce02d"
+    },
+    {
+      "path": "packages/cli/src/runtime/types.ts",
+      "sha256": "0307a79e44e7ed97f390de75d12bf8efa6f483bff54d0960b376fe19e9379aaf"
+    },
+    {
+      "path": "packages/cli/src/scan/render-report.ts",
+      "sha256": "53ee88081b77467cbbf81b4379848d29cde26765cbd13f4d08db9915012418d3"
+    },
+    {
+      "path": "packages/cli/src/tasks/task-redaction.ts",
+      "sha256": "6e7deb58aecb2e4af840dc063a211e2d593fb142251d4cfd24681e5883ff497c"
+    },
+    {
+      "path": "packages/cli/src/tasks/task-state.ts",
+      "sha256": "c9b2d1a3b354a6497fc8443a5bfd82cae0514516e2e3c38c94e0d6195337e9fb"
+    },
+    {
+      "path": "packages/cli/src/trace/trace-error.ts",
+      "sha256": "849f96703c21a216433e76834508d561a7d304e834133e296f941e6957db4549"
+    },
+    {
+      "path": "packages/cli/src/utils/common-utils.ts",
+      "sha256": "d153375a2af0e5344b215a8cd03b461808b72c4ee387face8614cb0e6a759b94"
+    },
+    {
+      "path": "packages/cli/src/utils/logger.ts",
+      "sha256": "ea5dc6c816450a73e1ab2da1b7e0de20f1df9cb318775129e5f5a74e8787f50e"
+    },
+    {
+      "path": "packages/cli/src/utils/project.ts",
+      "sha256": "b58103f11f15003d25c27f017a3c79df3b6a39d1df136124c13c0a65a5a01ba4"
+    },
+    {
+      "path": "packages/cli/src/utils/semver.ts",
+      "sha256": "8d0cefb155a5b5e405b5ec1c77033dd76d3dad437dc0f02b4362a1645916c7f0"
+    },
+    {
+      "path": "packages/cli/src/workspace/patch-review.ts",
+      "sha256": "9a38efd5cae475950b107cf7a52f8fcad77bc6fa09cdcc46228595023c0d4f4f"
+    },
+    {
+      "path": "packages/cli/src/workspace/patch-transaction.ts",
+      "sha256": "0186fba20208080634c8185701c8b5eaa2451d3e4b78ac44c9a0966f098f97b8"
+    },
+    {
+      "path": "packages/cli/src/workspace/patch-types.ts",
+      "sha256": "5b364a8c7131e020ee3fdcb5ce22c3db532b8337ec17f14ba3a4670a5e19f464"
+    },
+    {
+      "path": "packages/cli/src/workspace/path-guard.ts",
+      "sha256": "fd603c8e4b4afdaf50ecf3f8f6b601807fd8db7c58d2188438205636aa4bea13"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "runtime.mjs",
+      "bytes": 675448,
+      "sha256": "7540b17a4ea8225af21b11451301bbee9d9d2c4a5ff53e41719089db3ab3155a"
+    },
+    {
+      "path": "doctor.mjs",
+      "bytes": 158,
+      "sha256": "d1f0dbea78b7dd1a1a5f84ba391594464669d3842962e35120f1c21a64f4e9e2"
+    },
+    {
+      "path": "generate-integration.mjs",
+      "bytes": 172,
+      "sha256": "f6fce26661df3f84159a508469c6aeca2e56553c39df9cbe4de0dd3b4d1af0a4"
+    },
+    {
+      "path": "verify-release.mjs",
+      "bytes": 166,
+      "sha256": "67d79c29e03f9af4f9c9ca90040a3ed298c06caf471fc72a5ad68df33098aaaf"
+    }
+  ],
+  "standalone": true,
+  "compilerBinding": "unverified",
+  "releasePurity": "unverified"
+}

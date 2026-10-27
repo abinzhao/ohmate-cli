@@ -1,0 +1,4 @@
+#!/bin/sh
+# Local development entry. Installed packages expose the same command via the wrapper bin.
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+OHMATE_BIN_NAME=ohc exec node "$HERE/../packages/cli-wrapper/cli.js" "$@"

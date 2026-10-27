@@ -1,0 +1,80 @@
+{
+  "name": "ohmate-cli-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "prebuild": "npm run generate:kit-tools",
+    "build": "npm run build --workspaces --if-present",
+    "build:engine": "npm run build -w packages/docs-engine && npm run build -w packages/docs-zh",
+    "build:index": "npm run build:index -w packages/docs-index-builder",
+    "build:docs-zh": "npm run build -w packages/docs-zh",
+    "build:plugin": "node .plugin/scripts/build.mjs",
+    "check:plugin": "node .plugin/scripts/validate.mjs",
+    "test:plugin": "tsc -p .plugin && vitest run --config .plugin/vitest.config.ts",
+    "test:trae-bridge": "node --test extensions/trae-model-bridge/bridge.test.mjs",
+    "build:trae-bridge": "node extensions/trae-model-bridge/package.mjs",
+    "smoke:plugin": "node .plugin/scripts/smoke.mjs",
+    "lint": "eslint packages/*/src/**/*.ts .plugin/**/*.ts .plugin/**/*.mjs",
+    "lint:fix": "eslint packages/*/src/**/*.ts .plugin/**/*.ts .plugin/**/*.mjs --fix",
+    "format": "prettier --write packages/*/src/**",
+    "license": "node scripts/generate-product-license.mjs",
+    "test": "vitest run",
+    "pretest:web:touch": "npm run build -w packages/cli",
+    "test:web:touch": "node scripts/verify-patch-browser.mjs --touch",
+    "pretest:platform": "npm run build",
+    "test:platform": "vitest run packages/cli/src/runtime/process-tree.test.ts packages/cli/src/runtime/process-runner.test.ts packages/cli/src/agent/trae-cli-process.test.ts packages/cli/src/utils/build-lock.test.ts packages/cli/src/web/web-lifecycle.test.ts --maxWorkers=1",
+    "typecheck": "tsc --noEmit -p packages/cli && tsc --noEmit -p packages/docs-engine && tsc --noEmit -p packages/docs-index-builder",
+    "catalog": "node scripts/export-command-catalog.mjs",
+    "check:catalog": "node scripts/export-command-catalog.mjs --check",
+    "generate:kit-contract": "node --import tsx scripts/generate-kit-contract.mjs",
+    "generate:kit-tools": "node scripts/generate-kit-tools.mjs",
+    "check:kit-tools": "node scripts/generate-kit-tools.mjs --check",
+    "test:kit:tools": "vitest run packages/cli/src/integrate/kit-tools.test.ts packages/cli/src/integrate/runtime.test.ts packages/cli/src/release/probes.test.ts",
+    "test:kit": "node --test --import tsx scripts/verify-kit-core.mjs",
+    "test:kit:core": "node scripts/kit-public-core-tests.mjs",
+    "test:kit:platform": "node scripts/kit-platform-host-tests.mjs",
+    "test:kit:providers": "node scripts/kit-provider-tests.mjs",
+    "test:kit:debug": "node scripts/kit-debug-tests.mjs",
+    "test:kit:testbridge": "node scripts/kit-testbridge-tests.mjs",
+    "test:kit:window": "node scripts/kit-window-host-tests.mjs",
+    "test:kit:runtime": "node scripts/kit-context-runtime-tests.mjs",
+    "test:kit:position": "node scripts/kit-position-tests.mjs",
+    "test:kit:archive-save": "node scripts/kit-archive-save-tests.mjs",
+    "test:kit:archive-save-host": "node scripts/kit-archive-save-host-tests.mjs",
+    "test:kit:problem-panel": "node scripts/kit-problem-panel-tests.mjs",
+    "verify:package": "node scripts/verify-package.mjs",
+    "start": "node packages/cli-wrapper/cli.js",
+    "prepare": "husky",
+    "prepublishOnly": "npm run lint && npm run license"
+  },
+  "dependencies": {
+    "body-parser": "2.4.0",
+    "fast-uri": "3.1.9",
+    "follow-redirects": "1.16.2",
+    "hono": "4.13.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.1",
+    "generate-license-file": "^4.2.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.3",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "dotenv": "16.4.7",
+    "zod": "4.6.7"
+  }
+}

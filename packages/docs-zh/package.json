@@ -1,0 +1,35 @@
+{
+  "name": "@ohmate/knowledgebase",
+  "version": "0.1.0",
+  "description": "OHMate documentation engine and independently supplied knowledge archives",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/engine",
+    "docs.zip",
+    "index.zip",
+    "index.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:index": "node scripts/build-index.mjs",
+    "lint": "echo \"no src to lint\""
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.54.1-build1",
+    "jieba-wasm": "^2.4.0",
+    "yauzl": "^3.2.0",
+    "adm-zip": "0.6.1",
+    "proper-lockfile": "^4.1.2",
+    "ora": "^9.4.0"
+  },
+  "apiVersion": 1
+}

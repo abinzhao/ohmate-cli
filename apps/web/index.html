@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>OHMate · 鸿蒙开发与质量助手</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#canvas">跳到工作区</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="工作导航">
+      <div class="sidebar-header">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">O</span>
+          <span><strong>OHMate</strong><small>鸿蒙开发与质量助手</small></span>
+        </a>
+        <button id="sidebar-close" class="icon-btn sidebar-close" type="button" aria-label="关闭导航">
+          <span data-icon="x" aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="primary-nav">
+        <a href="#home" data-nav="home" aria-current="page"><span data-icon="plus" aria-hidden="true"></span>新任务</a>
+        <a href="#apps" data-nav="apps"><span data-icon="layout-grid" aria-hidden="true"></span>我的应用</a>
+        <a href="#library" data-nav="library"><span data-icon="file-text" aria-hidden="true"></span>成果与报告</a>
+      </nav>
+      <h2 class="history-title">最近任务</h2>
+      <div class="history-tools">
+        <label class="sr-only" for="history-search">搜索最近任务</label>
+        <input id="history-search" class="history-search" type="search" placeholder="搜索任务或工程">
+        <label class="sr-only" for="history-filter">按状态筛选</label>
+        <select id="history-filter" class="history-filter" aria-label="按状态筛选">
+          <option value="all">全部状态</option>
+          <option value="running">执行中</option>
+          <option value="succeeded">已完成</option>
+          <option value="failed">失败</option>
+          <option value="cancelled">已停止</option>
+          <option value="blocked">需补充条件</option>
+        </select>
+      </div>
+      <div id="history-list" class="history-list"><p class="muted">正在读取本地任务…</p></div>
+      <div class="sidebar-bottom">
+        <button id="models-button" class="sidebar-utility">
+          <span data-icon="cpu" aria-hidden="true"></span><span>模型连接</span><small>按需启用</small>
+        </button>
+        <button id="settings-button" class="sidebar-utility">
+          <span data-icon="settings" aria-hidden="true"></span><span>设置</span>
+        </button>
+        <p class="workspace-caption">本地工作空间 <span>OHMate 0.1</span></p>
+      </div>
+    </aside>
+    <button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="关闭导航" tabindex="-1" hidden></button>
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="sidebar-toggle" class="icon-btn" aria-label="展开导航" aria-expanded="false">
+            <span data-icon="menu" aria-hidden="true"></span>
+          </button>
+          <div class="topbar-heading">
+            <span id="page-title">新任务</span>
+            <span id="page-context">当前工作</span>
+          </div>
+          <button id="app-picker" class="application-label">未选择应用</button>
+        </div>
+        <div class="topbar-actions">
+          <button id="debug-button" class="topbar-action" aria-label="打开调试工作区">
+            <span data-icon="activity" aria-hidden="true"></span><span class="topbar-label">调试工作区</span>
+          </button>
+          <button id="device-button" class="device-status" aria-label="查看设备状态">
+            <span data-icon="smartphone" aria-hidden="true"></span><span class="topbar-label">设备 · 未检测</span>
+          </button>
+        </div>
+      </header>
+      <div class="main-body">
+        <section class="conversation-area">
+          <div id="canvas" tabindex="-1"></div>
+          <div id="composer-dock" class="composer-dock">
+            <form id="composer-form" class="composer">
+              <div id="composer-scopes" class="composer-scopes" hidden></div>
+              <label for="prompt" class="sr-only">描述你想完成的鸿蒙任务</label>
+              <textarea id="prompt" rows="2" maxlength="32768" placeholder="描述目标，选择文件与工具，再开始任务…"></textarea>
+              <div class="composer-controls">
+                <div class="composer-tools">
+                  <button type="button" id="files-button" class="icon-btn" aria-label="引用应用文件" title="引用应用文件">
+                    <span data-icon="file-plus" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" id="tools-button" class="icon-btn" aria-label="选择本地工具" title="选择本地工具">
+                    <span data-icon="terminal" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" id="context-button" class="control-btn" aria-label="管理上下文">
+                    <span data-icon="layers" aria-hidden="true"></span><span>上下文</span>
+                  </button>
+                </div>
+                <div class="composer-send">
+                  <button type="button" id="model-picker" class="model-picker">
+                    <span data-icon="cpu" aria-hidden="true"></span><span>无模型 · 本地工具</span>
+                  </button>
+                  <button type="submit" id="send-button" class="send-btn" aria-label="发送任务">
+                    <span data-icon="arrow-up" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="composer-caption"><span id="composer-caption">本地工具无需模型；模型发送前可预览上下文。</span><span>⌘ / Ctrl Enter 发送</span></div>
+          </div>
+        </section>
+        <button id="result-backdrop" class="result-backdrop" type="button" aria-label="关闭成果" tabindex="-1" hidden></button>
+        <aside id="result-panel" class="result-panel" aria-label="任务成果" hidden>
+          <header class="result-panel-header">
+            <div><h2>成果与依据</h2><p id="result-subtitle">任务结论、变更与验证范围</p></div>
+            <button id="result-close" class="icon-btn" aria-label="关闭成果">
+              <span data-icon="x" aria-hidden="true"></span>
+            </button>
+          </header>
+          <div id="result-body"></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+  <div id="alert-root" role="alert" aria-live="assertive"></div>
+  <noscript>工作台需要 JavaScript。终端可独立使用全部注册工具：ohmatecli --help。</noscript>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

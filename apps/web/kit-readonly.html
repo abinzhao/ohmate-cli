@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OHMate 本地只读测试页</title>
+  <link rel="stylesheet" href="/kit-readonly.css">
+  <script src="/kit-readonly.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>OHMate 本地测试页</h1>
+    <p>用于验证页面结构、加载回调和 Console 级别。此页只有固定示例内容。</p>
+    <section aria-label="结构示例">
+      <h2>结构示例</h2>
+      <ul><li>页面</li><li>标题</li><li>列表</li></ul>
+    </section>
+    <button type="button" id="emit">产生一条示例 Console 事件</button>
+    <p id="result" role="status">等待操作</p>
+    <button type="button" id="resource-probe">请求一次资源</button>
+    <p id="resource-result" role="status">在应用内确认资源覆盖后，可请求固定 CSS 资源；只检查响应，不修改样式。</p>
+  </main>
+</body>
+</html>

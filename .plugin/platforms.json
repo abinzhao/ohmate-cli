@@ -1,0 +1,23 @@
+[
+  {
+    "platform": "qoder",
+    "hostName": "Qoder",
+    "agentName": "qoder",
+    "manifestPath": ".qoder-plugin/plugin.json",
+    "manifest": {
+      "name": "deveco-cli",
+      "version": "0.1.0",
+      "displayName": "DevEco CLI / 鸿蒙开发",
+      "description": "通过 DevEco CLI 创建、构建、运行和调试 HarmonyOS 应用，查询鸿蒙文档并检查设备 UI。",
+      "author": { "name": "DevEco CLI Maintainers" },
+      "homepage": "https://gitcode.com/openharmony-sig/deveco-cli",
+      "repository": "https://gitcode.com/openharmony-sig/deveco-cli",
+      "license": "MIT",
+      "keywords": ["harmonyos", "deveco", "arkts", "arkui", "鸿蒙"]
+    },
+    "runtime": {
+      "hostBinDirs": [".qoder/bin", ".qoder-cn/bin"],
+      "installRoot": ".local/share/qoder/deveco-cli"
+    }
+  }
+]

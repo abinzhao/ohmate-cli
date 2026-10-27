@@ -1,0 +1,26 @@
+{
+  "name": "@ohmate/ohmatecli",
+  "version": "0.1.0",
+  "description": "OHMate CLI for HarmonyOS development, tasks and local workbench",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ohmatecli": "cli.js",
+    "ohc": "cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "keywords": [
+    "harmonyos",
+    "deveco",
+    "cli",
+    "openharmony"
+  ],
+  "dependencies": {
+    "@ohmate/cli-common": "0.1.0"
+  }
+}

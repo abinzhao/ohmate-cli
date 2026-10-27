@@ -1,0 +1,280 @@
+{
+  "amp": {
+    "displayName": "Amp",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.config/agents/skills"
+  },
+  "antigravity": {
+    "displayName": "Antigravity",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.gemini/antigravity/skills"
+  },
+  "antigravity-cli": {
+    "displayName": "Antigravity CLI",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.gemini/antigravity-cli/skills"
+  },
+  "astrbot": {
+    "displayName": "AstrBot",
+    "skillsDir": "data/skills",
+    "globalSkillsDir": "~/.astrbot/data/skills"
+  },
+  "atomcode": {
+    "displayName": "atomcode",
+    "skillsDir": ".atomcode/skills",
+    "globalSkillsDir": "~/.atomcode/skills",
+    "detect": ["~/.atomcode"]
+  },
+  "augment": {
+    "displayName": "Augment",
+    "skillsDir": ".augment/skills",
+    "globalSkillsDir": "~/.augment/skills"
+  },
+  "bob": {
+    "displayName": "IBM Bob",
+    "skillsDir": ".bob/skills",
+    "globalSkillsDir": "~/.bob/skills"
+  },
+  "claude-code": {
+    "displayName": "Claude Code",
+    "skillsDir": ".claude/skills",
+    "globalSkillsDir": "~/.claude/skills",
+    "detect": ["~/.claude"]
+  },
+  "cline": {
+    "displayName": "Cline",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills"
+  },
+  "codearts-agent": {
+    "displayName": "CodeArts Agent",
+    "skillsDir": ".codeartsdoer/skills",
+    "globalSkillsDir": "~/.codeartsdoer/skills"
+  },
+  "codebuddy": {
+    "displayName": "CodeBuddy",
+    "skillsDir": ".codebuddy/skills",
+    "globalSkillsDir": "~/.codebuddy/skills",
+    "detect": ["~/.codebuddy"]
+  },
+  "codex": {
+    "displayName": "Codex",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills",
+    "detect": ["~/.codex"],
+    "legacySkillsDirs": [".codex/skills"],
+    "legacyGlobalSkillsDirs": ["~/.codex/skills"]
+  },
+  "continue": {
+    "displayName": "Continue",
+    "skillsDir": ".continue/skills",
+    "globalSkillsDir": "~/.continue/skills"
+  },
+  "crush": {
+    "displayName": "Crush",
+    "skillsDir": ".crush/skills",
+    "globalSkillsDir": "~/.config/crush/skills"
+  },
+  "cursor": {
+    "displayName": "Cursor",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.cursor/skills",
+    "detect": ["~/.cursor"],
+    "legacySkillsDirs": [".cursor/skills"]
+  },
+  "deepagents": {
+    "displayName": "Deep Agents",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.deepagents/agent/skills"
+  },
+  "deveco": {
+    "displayName": "deveco",
+    "skillsDir": ".deveco/skills",
+    "globalSkillsDir": "~/.config/deveco/skills",
+    "detect": ["~/.config/deveco"]
+  },
+  "devin": {
+    "displayName": "Devin for Terminal",
+    "skillsDir": ".devin/skills",
+    "globalSkillsDir": "~/.config/devin/skills"
+  },
+  "droid": {
+    "displayName": "Droid",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.factory/skills"
+  },
+  "dsh": {
+    "displayName": "deepseek harness",
+    "skillsDir": ".dsh/skills",
+    "globalSkillsDir": "~/.dsh/skills",
+    "detect": ["~/.dsh"]
+  },
+  "gemini-cli": {
+    "displayName": "Gemini CLI",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.gemini/skills"
+  },
+  "github-copilot": {
+    "displayName": "GitHub Copilot",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.copilot/skills"
+  },
+  "goose": {
+    "displayName": "Goose",
+    "skillsDir": ".goose/skills",
+    "globalSkillsDir": "~/.config/goose/skills"
+  },
+  "grok": {
+    "displayName": "Grok Build",
+    "skillsDir": ".grok/skills",
+    "globalSkillsDir": "~/.grok/skills"
+  },
+  "hermes-agent": {
+    "displayName": "Hermes Agent",
+    "skillsDir": ".hermes/skills",
+    "globalSkillsDir": "~/.hermes/skills"
+  },
+  "iflow-cli": {
+    "displayName": "iFlow CLI",
+    "skillsDir": ".iflow/skills",
+    "globalSkillsDir": "~/.iflow/skills"
+  },
+  "junie": {
+    "displayName": "Junie",
+    "skillsDir": ".junie/skills",
+    "globalSkillsDir": "~/.junie/skills"
+  },
+  "kilo": {
+    "displayName": "Kilo Code",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.kilo/skills"
+  },
+  "kimi-code-cli": {
+    "displayName": "Kimi Code CLI",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills"
+  },
+  "kiro-cli": {
+    "displayName": "Kiro CLI",
+    "skillsDir": ".kiro/skills",
+    "globalSkillsDir": "~/.kiro/skills"
+  },
+  "kode": {
+    "displayName": "Kode",
+    "skillsDir": ".kode/skills",
+    "globalSkillsDir": "~/.kode/skills"
+  },
+  "lingma": {
+    "displayName": "Lingma",
+    "skillsDir": ".lingma/skills",
+    "globalSkillsDir": "~/.lingma/skills"
+  },
+  "minimax-code": {
+    "displayName": "MiniMax Code",
+    "skillsDir": ".minimax/skills",
+    "globalSkillsDir": "~/.minimax/skills"
+  },
+  "mistral-vibe": {
+    "displayName": "Mistral Vibe",
+    "skillsDir": ".vibe/skills",
+    "globalSkillsDir": "~/.vibe/skills"
+  },
+  "neovate": {
+    "displayName": "Neovate",
+    "skillsDir": ".neovate/skills",
+    "globalSkillsDir": "~/.neovate/skills"
+  },
+  "ona": {
+    "displayName": "Ona",
+    "skillsDir": ".ona/skills",
+    "globalSkillsDir": "~/.ona/skills"
+  },
+  "openclaw": {
+    "displayName": "OpenClaw",
+    "skillsDir": "skills",
+    "globalSkillsDir": "~/.openclaw/skills"
+  },
+  "opencode": {
+    "displayName": "OpenCode",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.config/opencode/skills",
+    "detect": ["~/.config/opencode"],
+    "legacySkillsDirs": [".opencode/skills"]
+  },
+  "openhands": {
+    "displayName": "OpenHands",
+    "skillsDir": ".openhands/skills",
+    "globalSkillsDir": "~/.openhands/skills"
+  },
+  "pi": {
+    "displayName": "Pi",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills",
+    "detect": ["~/.pi/agent"],
+    "legacySkillsDirs": [".pi/skills"],
+    "legacyGlobalSkillsDirs": ["~/.pi/agent/skills"]
+  },
+  "qoder": {
+    "displayName": "Qoder",
+    "skillsDir": ".qoder/skills",
+    "globalSkillsDir": "~/.qoder/skills",
+    "detect": ["~/.qoder"]
+  },
+  "qoder-cn": {
+    "displayName": "Qoder CN",
+    "skillsDir": ".qoder/skills",
+    "globalSkillsDir": "~/.qoder-cn/skills"
+  },
+  "qwen-code": {
+    "displayName": "Qwen Code",
+    "skillsDir": ".qwen/skills",
+    "globalSkillsDir": "~/.qwen/skills"
+  },
+  "reasonix": {
+    "displayName": "Reasonix",
+    "skillsDir": ".reasonix/skills",
+    "globalSkillsDir": "~/.reasonix/skills"
+  },
+  "replit": {
+    "displayName": "Replit",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.config/agents/skills"
+  },
+  "trae": {
+    "displayName": "Trae",
+    "skillsDir": ".trae/skills",
+    "globalSkillsDir": "~/.trae/skills"
+  },
+  "trae-cn": {
+    "displayName": "Trae CN",
+    "skillsDir": ".trae/skills",
+    "globalSkillsDir": "~/.trae-cn/skills",
+    "detect": ["~/.trae-cn"],
+    "legacySkillsDirs": [".trae-cn/skills"]
+  },
+  "universal": {
+    "displayName": "Universal",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.config/agents/skills"
+  },
+  "warp": {
+    "displayName": "Warp",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills"
+  },
+  "windsurf": {
+    "displayName": "Windsurf",
+    "skillsDir": ".windsurf/skills",
+    "globalSkillsDir": "~/.codeium/windsurf/skills"
+  },
+  "zcode": {
+    "displayName": "ZCode",
+    "skillsDir": ".zcode/skills",
+    "globalSkillsDir": "~/.zcode/skills"
+  },
+  "zed": {
+    "displayName": "Zed",
+    "skillsDir": ".agents/skills",
+    "globalSkillsDir": "~/.agents/skills"
+  }
+}

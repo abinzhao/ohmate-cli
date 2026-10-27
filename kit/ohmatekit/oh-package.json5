@@ -1,0 +1,8 @@
+{
+  "name": "@ohmate/ohmatekit",
+  "version": "6.0.0",
+  "description": "Bounded HarmonyOS Core with explicit Debug/Test context integration. Build authentication remains unverified.",
+  "main": "Index.ets",
+  "license": "MIT",
+  "dependencies": {}
+}

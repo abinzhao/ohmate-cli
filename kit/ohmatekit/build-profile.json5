@@ -1,0 +1,9 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "packingOptions": { "asset": { "include": ["tools/**"] } }
+  },
+  "targets": [
+    { "name": "default" }
+  ]
+}

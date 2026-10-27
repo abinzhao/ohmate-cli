@@ -1,0 +1,8 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; padding: 20px; background: Canvas; color: CanvasText; }
+main { max-width: 40rem; margin: auto; overflow-wrap: anywhere; }
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.1rem; }
+p, li { line-height: 1.6; }
+button { padding: 12px 16px; min-height: 48px; max-width: 100%; font: inherit; }
+button:focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }

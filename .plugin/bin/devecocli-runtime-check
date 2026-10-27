@@ -1,0 +1,11 @@
+#!/bin/sh
+# Copyright (c) 2026 Huawei Device Co., Ltd.
+# SPDX-License-Identifier: MIT
+# deveco-cli-plugin-entry
+set -eu
+if ! command -v node >/dev/null 2>&1; then
+  printf '%s\n' 'Node.js 22 or later is required. Install Node.js and retry.' >&2
+  exit 1
+fi
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+exec node "$SCRIPT_DIR/../runtime/main.mjs" check "$@"

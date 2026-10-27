@@ -1,0 +1,28 @@
+{
+  "name": "@ohmate/docs-index-builder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": { ".": "./dist/index.js" },
+  "files": ["dist", "data"],
+  "scripts": {
+    "build": "tsup",
+    "build:index": "tsx src/cli.ts",
+    "lint": "eslint src"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@ohmate/docs-engine": "0.1.0",
+    "adm-zip": "0.6.1",
+    "mdast-util-to-string": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "turndown": "^7.2.4",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.8",
+    "@types/turndown": "^5.0.5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ohmate-trae-model-bridge",
+  "displayName": "OHMate TRAE Model Bridge",
+  "description": "Use models exposed by the editor's public Language Model API from OHMate CLI and Web.",
+  "version": "0.1.0",
+  "publisher": "ohmate",
+  "license": "MIT",
+  "engines": { "vscode": "^1.103.0" },
+  "categories": ["AI", "Other"],
+  "main": "./extension.cjs",
+  "activationEvents": [],
+  "extensionKind": ["ui"],
+  "capabilities": { "untrustedWorkspaces": { "supported": false }, "virtualWorkspaces": false },
+  "contributes": {
+    "commands": [
+      { "command": "ohmate.traeBridge.start", "title": "OHMate: 启动 TRAE 模型桥" },
+      { "command": "ohmate.traeBridge.copy", "title": "OHMate: 复制模型桥连接设置（含临时密钥）" },
+      { "command": "ohmate.traeBridge.stop", "title": "OHMate: 停止 TRAE 模型桥" }
+    ]
+  }
+}
